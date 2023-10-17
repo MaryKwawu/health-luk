@@ -6,6 +6,14 @@
   <fa-icon [icon]="faXTwitter" class="fa-3x"></fa-icon>
 </div>
 
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input type="email" id="email" formControlName="email" placeholder="Join our Waitlist">
+
+
+  <button type="submit">Submit</button>
+</form>
+
+
 
 <!--<form (ngSubmit)="onSubmit()">-->
 <!--  <div class="form-group">-->

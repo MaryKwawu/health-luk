@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FormGroup, FormControl } from '@angular/forms';
 // import { FormControl } from '@angular/forms';
 
 
@@ -10,7 +11,15 @@ import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-sv
 })
 export class AppComponent {
   title = 'healthluk';
-//   name = new FormControl('');
+  form = new FormGroup({
+   message: new FormControl('')
+   });
+
+   onSubmit() {
+    console.log(this.form.value);
+  }
+
+//   name = new });FormControl('');
 
   faFacebook = faFacebook
   faInstagram = faInstagram
