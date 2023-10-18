@@ -1,17 +1,27 @@
-<img src="https://healthluk.netlify.app/img/logo-new-3.png" alt="Company Logo">
+<div class="logo-img">
+                <div class="background-img">
+                  <img src="assets/bg-image_104658.jpg" alt="beautiful health assistants ">
+                </div>
+                   <div class="logo">
+                      <img src="https://healthluk.netlify.app/img/logo-new-3.png" alt="Company Logo">
+                   </div>
+         <div class="brands">
+               <fa-icon [icon]="faFacebook" class="fa-3x"></fa-icon>
+               <fa-icon [icon]="faInstagram" class="fa-3x"></fa-icon>
+               <fa-icon [icon]="faXTwitter" class="fa-3x"></fa-icon>
+         </div>
+                <div class="h1-container">
+                    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                               <input type="email" id="email" formControlName="email"
+                                     placeholder="Join our Waitlist"> <button type="submit">Submit</button>
+                    </form>
+                </div>
 
-<div>
-  <fa-icon [icon]="faFacebook" class="fa-3x"></fa-icon>
-  <fa-icon [icon]="faInstagram" class="fa-3x"></fa-icon>
-  <fa-icon [icon]="faXTwitter" class="fa-3x"></fa-icon>
 </div>
 
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <input type="email" id="email" formControlName="email" placeholder="Join our Waitlist">
 
 
-  <button type="submit">Submit</button>
-</form>
+
 
 
 
