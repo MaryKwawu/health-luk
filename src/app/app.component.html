@@ -1,6 +1,7 @@
+
 <div class="logo-img">
-                <div class="background-img">
-                  <img src="assets/bg-image_104658.jpg" alt="beautiful health assistants ">
+                <div class="background">
+                  <img src="assets/bg-image_104658.jpg" alt="beautiful health assistants " class="background-image2">
                 </div>
                    <div class="logo">
                       <img src="https://healthluk.netlify.app/img/logo-new-3.png" alt="Company Logo">
@@ -11,9 +12,25 @@
                <fa-icon [icon]="faXTwitter" class="fa-3x"></fa-icon>
          </div>
                 <div class="h1-container">
+                  <div class="header-container">
+    <div>
+      <h1>
+        Your
+        <br>
+        Health Service
+        <br>
+        Navigator
+      </h1>
+      <p>
+        HealthLuk® is a comprehensive directory that connects
+        you with a world of healthcare options.
+      </p>
+    </div>
+
+  </div>
                     <form [formGroup]="form" (ngSubmit)="onSubmit()">
-                               <input type="email" id="email" formControlName="email"
-                                     placeholder="Join our Waitlist"> <button type="submit">Submit</button>
+                               <input type="email" id="email" formControlName="email" class="form-input"
+                                     placeholder="Join our Waitlist"> <button type="submit" class="submit">Submit</button>
                     </form>
                 </div>
 
